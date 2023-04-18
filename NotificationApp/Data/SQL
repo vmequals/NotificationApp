@@ -1,0 +1,21 @@
+﻿1. Open a terminal in your project's root folder or use the Package Manager Console in Visual Studio.
+
+2. Ensure that you have the EF Core CLI tools installed. If you haven't installed them already, you can install them with the following command:
+
+dotnet tool install --global dotnet-ef
+
+3. Add a new migration with the following command:
+
+dotnet ef migrations add InitialCreate
+
+This command will create a new folder named "Migrations" in your project, containing the necessary files for the initial migration.
+
+4. Update your database to apply the migration with the following command:
+
+dotnet ef database update
+
+This command will create the tables in your PostgreSQL database based on your DbContext configuration.
+
+
+Needed packages
+Microsoft.AspNetCore.Authentication.JwtBearer
